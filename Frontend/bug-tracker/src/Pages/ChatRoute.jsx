@@ -4,7 +4,7 @@ const ChatRoute=()=>{
 
     return(
         <div>
-            <h1>Welcome Chat</h1>
+            <h1>Welcome Chat Route</h1>
         </div>
     )
 }

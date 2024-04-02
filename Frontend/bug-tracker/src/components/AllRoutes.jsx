@@ -4,6 +4,7 @@ import AuthRoute from "../Pages/AuthRoute";
 import ChatRoute from "../Pages/ChatRoute";
 import TrackerRoute from "../Pages/TrackerRoute";
 
+
 export const AllRoutes = () => {
   return (
     <Routes>
