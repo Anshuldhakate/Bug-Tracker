@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
+width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +43,7 @@ const Button = styled.button`
   color: #fff;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 2%;
 
   &:hover {
     background-color: #0056b3;
@@ -72,8 +74,6 @@ const AuthRoute=()=>{
       e.preventDefault();
       setLoading(true);
       try {
-        // Perform login functionality here
-        // Example: Send email and password to your backend to authenticate
         setLoading(false);
       } catch (error) {
         setError("Failed to login");
@@ -85,8 +85,6 @@ const AuthRoute=()=>{
       e.preventDefault();
       setLoading(true);
       try {
-        // Perform signup functionality here
-        // Example: Send signupEmail and signupPassword to your backend to create a new user
         setLoading(false);
       } catch (error) {
         setError("Failed to signup");
@@ -97,7 +95,6 @@ const AuthRoute=()=>{
     const handleGoogleLogin = async () => {
       setLoading(true);
       try {
-        // Perform Google login functionality here
         setLoading(false);
       } catch (error) {
         setError("Failed to login with Google");
